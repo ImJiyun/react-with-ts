@@ -7,3 +7,11 @@ export const store = configureStore({
     cart: cartSlice.reducer,
   },
 }); // creates a redux store
+
+// const name = "Max";
+
+// type N = typeof name;
+
+export type AppDispatch = typeof store.dispatch;
+
+export type RootState = ReturnType<typeof store.getState>;
